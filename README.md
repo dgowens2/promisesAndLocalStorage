@@ -1,6 +1,6 @@
 # promisesAndLocalStorage
 
-Use scirpt.js to retrieve a movie either from localStorage, or from the omdbapi
+Use script.js to retrieve a movie either from localStorage, or from the omdbapi
 
 Use script2.js to create a JS object, set the object on localStorage, retrieve the object, add to it, then set it again, using a JS Promise
 
