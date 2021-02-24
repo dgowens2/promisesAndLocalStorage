@@ -39,7 +39,7 @@ var convertToJson = (storage) => {
 /* If a movie isn't found locally, this function is triggered by the .catch. 
    It returns the result of saveToLocalStorage to the next .then in the chain (posterToPage)*/
 var pullFromApi = (title) => {
-    return fetch('http://www.omdbapi.com/?apikey=5e70a208&t=Crimson+Tide') //You'll have to do some work here to place a string in the query params
+    return fetch('http://www.omdbapi.com/?apikey=<YOUR_kEY_HERE>&t=Crimson+Tide') //You'll have to do some work here to place a string in the query params
         .then(response => response.json())
         .then(data => saveToLocalStorage(data))
 
@@ -78,6 +78,6 @@ pullFromStorage("Angels in the Outfield")
     .then(movie => posterToPage(movie))
 
 //Our initial code that proved we can pull from an API
-// fetch('http://www.omdbapi.com/?apikey=5e70a208&t=the+jungle+book')
+// fetch('http://www.omdbapi.com/?apikey=<YOUR KEY HERE>&t=the+jungle+book')
 //     .then(response => response.json())
 //     .then(data => console.log(data))
